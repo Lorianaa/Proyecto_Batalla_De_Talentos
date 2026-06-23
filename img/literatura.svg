@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="litTitle">
+  <title id="litTitle">Ilustracion de literatura</title>
+  <rect width="400" height="300" fill="#1d1916"/>
+  <g transform="translate(120,60)">
+    <rect x="0" y="0" width="160" height="190" rx="3" fill="none" stroke="#C84B31" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="190" stroke="#C84B31" stroke-width="6"/>
+    <g stroke="#F2EDE4" stroke-width="2" opacity="0.85" stroke-linecap="round">
+      <line x1="24" y1="34" x2="136" y2="34"/>
+      <line x1="24" y1="52" x2="120" y2="52"/>
+      <line x1="24" y1="70" x2="136" y2="70"/>
+      <line x1="24" y1="88" x2="100" y2="88"/>
+      <line x1="24" y1="116" x2="136" y2="116"/>
+      <line x1="24" y1="134" x2="112" y2="134"/>
+      <line x1="24" y1="152" x2="136" y2="152"/>
+    </g>
+  </g>
+  <g stroke="#3E7C6F" stroke-width="2.5" fill="none" opacity="0.9" stroke-linecap="round">
+    <path d="M285 90 C 295 95, 295 110, 285 115 C 295 120, 295 135, 285 140"/>
+  </g>
+  <text x="24" y="278" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5a4e42">// narrative.parse — semantics: clean</text>
+</svg>

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Batalla de Talentos – Gala de Premiación 2026 | SENA</title>
+<meta name="description" content="Informe técnico de apropiación: Batalla de Talentos, Gala de Premiación 2026. Centro de Manufactura en Textil y Cuero, SENA. Programa ADSO." />
+<link rel="icon" type="image/svg+xml" href="img/logo.svg" />
+
+<!-- Tipografías: Fraunces (display), IBM Plex Sans (cuerpo), IBM Plex Mono (técnica) -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+
+<a href="#contenido" class="skip-link" data-es data-en>
+  <span data-es>Saltar al contenido</span><span data-en>Skip to content</span>
+</a>
+
+<!-- ===================== STATUS BAR ===================== -->
+<div class="statusbar" aria-hidden="true">
+  <div class="wrap">
+    <span><span class="dot"></span>build: batalla-talentos-2026 — status: <span style="color:#3e7c6f">online</span></span>
+    <span id="statusClock">00:00:00</span>
+    <span data-es>centro: manufactura textil y cuero · sena</span>
+    <span data-en>center: textile &amp; leather manufacturing · sena</span>
+  </div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar">
+  <div class="wrap">
+    <a href="#contenido" class="brand">
+      <img src="img/logo.svg" alt="" />
+      <span>
+        Batalla de Talentos
+        <span class="brand-sub" data-es>Gala de Premiación 2026</span>
+        <span class="brand-sub" data-en>2026 Awards Gala</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <a href="#inicio"><span data-es>Inicio</span><span data-en>Home</span></a>
+      <a href="#experiencia"><span data-es>Mi experiencia</span><span data-en>My experience</span></a>
+      <a href="#categorias"><span data-es>Categorías</span><span data-en>Categories</span></a>
+      <a href="#galeria"><span data-es>Galería</span><span data-en>Gallery</span></a>
+      <a href="#reflexion"><span data-es>Reflexión final</span><span data-en>Final reflection</span></a>
+      <a href="#glosario"><span data-es>Glosario</span><span data-en>Glossary</span></a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-toggle" role="group" aria-label="Selector de idioma / Language selector">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú de navegación">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ===================== HERO / INICIO ===================== -->
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">
+          <span data-es>Informe técnico de apropiación · ADSO</span>
+          <span data-en>Technical adoption report · Software Development</span>
+        </span>
+
+        <h1>
+          <span data-es>Batalla de <em>Talentos</em></span>
+          <span data-en>Talent <em>Battle</em></span>
+        </h1>
+
+        <p class="hero-lede">
+          <span data-es>Gala de Premiación 2026 del Centro de Manufactura en Textil y Cuero — una iniciativa institucional del SENA que conecta la sensibilidad del arte con la lógica estructurada del desarrollo de software.</span>
+          <span data-en>The 2026 Awards Gala of the Textile and Leather Manufacturing Center — a SENA institutional initiative that connects the sensibility of art with the structured logic of software development.</span>
+        </p>
+
+        <div class="hero-meta">
+          <span><strong data-es>Programa</strong><strong data-en>Program</strong>ADSO</span>
+          <span>
+            <strong data-es>Institución</strong><strong data-en>Institution</strong>
+            <span data-es>SENA</span><span data-en>SENA</span>
+          </span>
+          <span>
+            <strong data-es>Categorías</strong><strong data-en>Categories</strong>
+            <span data-es>5 disciplinas artísticas</span><span data-en>5 art disciplines</span>
+          </span>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#galeria" class="btn btn-primary">
+            <span data-es>Ver galería del evento</span><span data-en>View event gallery</span>
+          </a>
+          <a href="#categorias" class="btn btn-ghost">
+            <span data-es>Explorar categorías</span><span data-en>Explore categories</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-hidden="true">
+        <div class="hero-panel-bar">
+          <span></span><span></span><span></span>
+          <span class="hero-panel-title">index.html</span>
+        </div>
+        <div class="hero-panel-body">
+          <span class="line"><span class="c">&lt;!-- event.config --&gt;</span></span>
+          <span class="line"><span class="k">event</span>.name = <span class="s">"Batalla de Talentos"</span>;</span>
+          <span class="line"><span class="k">event</span>.year = <span class="s">2026</span>;</span>
+          <span class="line"><span class="k">event</span>.host = <span class="s">"SENA — Textil y Cuero"</span>;</span>
+          <span class="line"><span class="k">event</span>.categories = [</span>
+          <span class="line">&nbsp;&nbsp;<span class="s">"danza"</span>, <span class="s">"literatura"</span>,</span>
+          <span class="line">&nbsp;&nbsp;<span class="s">"pintura"</span>, <span class="s">"fotografía"</span>,</span>
+          <span class="line">&nbsp;&nbsp;<span class="s">"música"</span></span>
+          <span class="line">];</span>
+          <span class="line"><span class="k">render</span>(event) <span class="c">// → UX fluida</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCIA / SOBRE EL EVENTO ===================== -->
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 01</span>
+          <h2><span data-es>Mi experiencia en la Batalla de Talentos</span><span data-en>My experience at the Talent Battle</span></h2>
+        </div>
+        <p>
+          <span data-es>Aprendizajes obtenidos al presenciar el cruce entre disciplina técnica y expresión creativa.</span>
+          <span data-en>Lessons learned from witnessing the intersection of technical discipline and creative expression.</span>
+        </p>
+      </div>
+
+      <div class="intro-grid">
+        <div>
+          <p data-es>La Batalla de Talentos – Gala de Premiación 2026 es una iniciativa institucional estratégica liderada por el Centro de Manufactura en Textil y Cuero del SENA. Este espacio está orientado a visibilizar, reconocer y potenciar las habilidades artísticas, culturales y creativas de la comunidad académica.</p>
+          <p data-en>The Talent Battle – 2026 Awards Gala is a strategic institutional initiative led by SENA's Textile and Leather Manufacturing Center. This space is oriented toward showcasing, recognizing, and strengthening the artistic, cultural, and creative skills of the academic community.</p>
+
+          <p data-es>El evento se constituye como un escenario de integración interdisciplinaria donde la danza, la literatura, las artes plásticas, la fotografía y la música convergen para demostrar que la formación profesional integral va más allá de las competencias técnicas, promoviendo el desarrollo de habilidades humanas esenciales para el entorno laboral contemporáneo.</p>
+          <p data-en>The event serves as a stage for interdisciplinary integration where dance, literature, visual arts, photography, and music converge to demonstrate that comprehensive professional training goes beyond technical skills, fostering human abilities essential to today's workplace.</p>
+
+          <p data-es>La participación en la Gala permitió una observación directa de cómo la disciplina técnica interactúa con la libre expresión creativa. Ejecutar una pieza musical, coordinar una coreografía o capturar una fotografía requiere un proceso de planeación, iteración y manejo del error idéntico al que se vive en el desarrollo de software.</p>
+          <p data-en>Participating in the Gala allowed for direct observation of how technical discipline interacts with free creative expression. Performing a musical piece, coordinating a choreography, or capturing a photograph requires a process of planning, iteration, and error-handling identical to what happens in software development.</p>
+        </div>
+
+        <div class="objective-box">
+          <span class="label" data-es>Objetivo del sitio web</span>
+          <span class="label" data-en>Website objective</span>
+          <p data-es>El propósito fundamental de esta plataforma digital es documentar, analizar y transferir el conocimiento y las experiencias recolectadas durante la Gala de Premiación 2026. A través de este entorno FrontEnd, el aprendiz ADSO demuestra su capacidad técnica para estructurar flujos de información complejos, aplicar componentes de diseño interactivo adaptables y enlazar la sensibilidad estética del arte con la lógica estructurada de la ingeniería de software.</p>
+          <p data-en>The core purpose of this digital platform is to document, analyze, and transfer the knowledge and experiences gathered during the 2026 Awards Gala. Through this FrontEnd environment, the ADSO trainee demonstrates technical capacity to structure complex information flows, apply adaptable interactive design components, and link the aesthetic sensibility of art with the structured logic of software engineering.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PUENTE ARTE / SOFTWARE ===================== -->
+  <section id="puente">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 02</span>
+          <h2><span data-es>Arte y desarrollo de software</span><span data-en>Art and software development</span></h2>
+        </div>
+        <p>
+          <span data-es>Tres puentes conceptuales entre la creatividad artística y la ingeniería FrontEnd.</span>
+          <span data-en>Three conceptual bridges between artistic creativity and FrontEnd engineering.</span>
+        </p>
+      </div>
+
+      <div class="bridge-list">
+        <div class="bridge-item">
+          <div>
+            <span class="tag" data-es>Concepto 01</span>
+            <span class="tag" data-en>Concept 01</span>
+            <h3 data-es>La abstracción</h3>
+            <h3 data-en>Abstraction</h3>
+          </div>
+          <p data-es>Un pintor traduce una emoción a un lienzo mediante formas y colores; un desarrollador traduce una necesidad del mundo real a líneas de código utilizando algoritmos y estructuras lógicas.</p>
+          <p data-en>A painter translates an emotion onto a canvas through shapes and colors; a developer translates a real-world need into lines of code using algorithms and logical structures.</p>
+        </div>
+
+        <div class="bridge-item">
+          <div>
+            <span class="tag" data-es>Concepto 02</span>
+            <span class="tag" data-en>Concept 02</span>
+            <h3 data-es>Arquitectura dinámica</h3>
+            <h3 data-en>Dynamic architecture</h3>
+          </div>
+          <p data-es>Tanto en la danza como en la música existen patrones, estructuras y tiempos que deben sincronizarse para que el resultado sea armónico. En el FrontEnd, HTML5, CSS3 y JavaScript deben sincronizarse mediante frameworks como Bootstrap para ofrecer una experiencia de usuario fluida y sin fricciones.</p>
+          <p data-en>In both dance and music there are patterns, structures, and timings that must synchronize for a harmonious result. In FrontEnd development, HTML5, CSS3, and JavaScript must synchronize through frameworks like Bootstrap to deliver a smooth, frictionless user experience.</p>
+        </div>
+
+        <div class="bridge-item">
+          <div>
+            <span class="tag" data-es>Concepto 03</span>
+            <span class="tag" data-en>Concept 03</span>
+            <h3 data-es>Diseño centrado en las personas</h3>
+            <h3 data-en>Human-centered design</h3>
+          </div>
+          <p data-es>El arte busca generar una respuesta emocional en el espectador; el software busca resolver un problema y ofrecer una navegación intuitiva que reduzca la carga cognitiva del usuario final.</p>
+          <p data-en>Art seeks to generate an emotional response in the viewer; software seeks to solve a problem and offer intuitive navigation that reduces the end user's cognitive load.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORIAS ARTISTICAS ===================== -->
+  <section id="categorias">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 03</span>
+          <h2><span data-es>Categorías artísticas presentadas</span><span data-en>Featured art categories</span></h2>
+        </div>
+        <p>
+          <span data-es>Clasificación crítica de las expresiones artísticas observadas durante la gala.</span>
+          <span data-en>Critical classification of the artistic expressions observed during the gala.</span>
+        </p>
+      </div>
+
+      <div class="cat-grid">
+
+        <!-- DANZA — CON FOTO REAL -->
+        <article class="cat-card cat-wide">
+          <div class="cat-media">
+            <span class="cat-badge" data-es>Foto del evento</span>
+            <span class="cat-badge" data-en>Event photo</span>
+            <img src="img/event/22-baile-grupo-escenario.jpeg" alt="Grupo de baile presentándose en el escenario de la gala" loading="lazy" />
+          </div>
+          <div class="cat-body">
+            <div class="cat-icon">🩰</div>
+            <h3 data-es>Danza</h3><h3 data-en>Dance</h3>
+            <p class="cat-desc" data-es>Expresión corporal basada en movimientos rítmicos sincronizados bajo estructuras coreográficas folclóricas y modernas.</p>
+            <p class="cat-desc" data-en>Bodily expression based on synchronized rhythmic movement under folk and modern choreographic structures.</p>
+            <div class="cat-meta">
+              <span data-es><b>Participantes:</b> comunidad de aprendices e instructores de las fichas académicas del centro.</span>
+              <span data-en><b>Participants:</b> trainee and instructor community from the center's academic groups.</span>
+            </div>
+            <div class="cat-reflect">
+              <span class="label" data-es>Reflexión crítica</span>
+              <span class="label" data-en>Critical reflection</span>
+              <span data-es>Si un componente o hilo de ejecución se desfasa, se rompe la armonía de toda la aplicación — igual que en una coreografía.</span>
+              <span data-en>If a component or execution thread falls out of sync, the harmony of the whole application breaks — just like in a choreography.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- LITERATURA — CON FOTO REAL -->
+        <article class="cat-card">
+          <div class="cat-media">
+            <span class="cat-badge" data-es>Foto del evento</span>
+            <span class="cat-badge" data-en>Event photo</span>
+            <img src="img/event/21-literatura-orador-podio.jpeg" alt="Aprendiz declamando desde el podio ante el público" loading="lazy" />
+          </div>
+          <div class="cat-body">
+            <div class="cat-icon">📚</div>
+            <h3 data-es>Literatura</h3><h3 data-en>Literature</h3>
+            <p class="cat-desc" data-es>Manifestación escrita a través de la poesía, el cuento corto y la narrativa oral, enfocada en transmitir ideas, identidades y realidades sociales.</p>
+            <p class="cat-desc" data-en>Written expression through poetry, short stories, and oral narrative, focused on conveying ideas, identities, and social realities.</p>
+            <div class="cat-meta">
+              <span data-es><b>Participantes:</b> escritores y declamadores de la comunidad SENA.</span>
+              <span data-en><b>Participants:</b> writers and reciters from the SENA community.</span>
+            </div>
+            <div class="cat-reflect">
+              <span class="label" data-es>Reflexión crítica</span>
+              <span class="label" data-en>Critical reflection</span>
+              <span data-es>Escribir un poema exige precisión semántica; escribir código requiere etiquetas HTML5 limpias para que las tecnologías de accesibilidad interpreten el sistema correctamente.</span>
+              <span data-en>Writing a poem demands semantic precision; writing code requires clean HTML5 tags so accessibility technologies interpret the system correctly.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PINTURA Y DIBUJO — CON FOTOS REALES -->
+        <article class="cat-card cat-wide">
+          <div class="cat-media">
+            <span class="cat-badge" data-es>Foto del evento</span>
+            <span class="cat-badge" data-en>Event photo</span>
+            <img src="img/event/13-pintura-galeria-completa.jpeg" alt="Galería de pinturas exhibidas durante la gala" loading="lazy" />
+          </div>
+          <div class="cat-body">
+            <div class="cat-icon">🎨</div>
+            <h3 data-es>Pintura y dibujo</h3><h3 data-en>Painting and drawing</h3>
+            <p class="cat-desc" data-es>Representaciones visuales bidimensionales con técnicas de óleo, acrílico, carboncillo e ilustración, plasmando conceptos estéticos y culturales.</p>
+            <p class="cat-desc" data-en>Two-dimensional visual representations using oil, acrylic, charcoal, and illustration techniques, capturing aesthetic and cultural concepts.</p>
+            <div class="cat-meta">
+              <span data-es><b>Participantes:</b> expositores del área de artes plásticas del centro.</span>
+              <span data-en><b>Participants:</b> visual-arts exhibitors from the center.</span>
+            </div>
+            <div class="cat-reflect">
+              <span class="label" data-es>Reflexión crítica</span>
+              <span class="label" data-en>Critical reflection</span>
+              <span data-es>La teoría del color, las proporciones y la jerarquía visual son aplicables al diseño de interfaces, donde el contraste determina la legibilidad y usabilidad de un sitio web.</span>
+              <span data-en>Color theory, proportion, and visual hierarchy apply directly to UI design, where contrast determines a website's readability and usability.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FOTOGRAFIA — CON FOTO REAL -->
+        <article class="cat-card">
+          <div class="cat-media">
+            <span class="cat-badge" data-es>Foto del evento</span>
+            <span class="cat-badge" data-en>Event photo</span>
+            <img src="img/event/25-fotografia-panoramica-salon.jpeg" alt="Vista panorámica del salón principal durante la gala" loading="lazy" />
+          </div>
+          <div class="cat-body">
+            <div class="cat-icon">📸</div>
+            <h3 data-es>Fotografía</h3><h3 data-en>Photography</h3>
+            <p class="cat-desc" data-es>Captura técnica y estética de momentos, texturas e iluminación mediante dispositivos ópticos, orientada a la narrativa visual estática.</p>
+            <p class="cat-desc" data-en>Technical and aesthetic capture of moments, textures, and lighting through optical devices, oriented toward static visual narrative.</p>
+            <div class="cat-meta">
+              <span data-es><b>Participantes:</b> fotógrafos aficionados y estudiantes del centro de formación.</span>
+              <span data-en><b>Participants:</b> amateur photographers and students from the training center.</span>
+            </div>
+            <div class="cat-reflect">
+              <span class="label" data-es>Reflexión crítica</span>
+              <span class="label" data-en>Critical reflection</span>
+              <span data-es>Entender el encuadre y el "Layout" es la base para dominar el Grid System de Bootstrap, distribuyendo elementos de forma proporcional en cualquier pantalla.</span>
+              <span data-en>Understanding framing and "Layout" is the foundation for mastering Bootstrap's Grid System, distributing elements proportionally across any screen.</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- MUSICA Y CANTO — CON FOTOS REALES -->
+        <article class="cat-card cat-wide">
+          <div class="cat-media">
+            <span class="cat-badge" data-es>Foto del evento</span>
+            <span class="cat-badge" data-en>Event photo</span>
+            <img src="img/event/05-canto-trio.jpeg" alt="Trío vocal e instrumental interpretando una pieza musical en la gala" loading="lazy" />
+          </div>
+          <div class="cat-body">
+            <div class="cat-icon">🎸</div>
+            <h3 data-es>Interpretación musical y canto</h3><h3 data-en>Musical performance and singing</h3>
+            <p class="cat-desc" data-es>Ejecución de instrumentos musicales (cuerdas, percusión, vientos) y modulación de la voz humana para la interpretación de piezas melódicas.</p>
+            <p class="cat-desc" data-en>Performance of musical instruments (strings, percussion, winds) and vocal modulation for interpreting melodic pieces.</p>
+            <div class="cat-meta">
+              <span data-es><b>Participantes:</b> agrupaciones musicales y solistas del Centro de Manufactura en Textil y Cuero.</span>
+              <span data-en><b>Participants:</b> musical groups and soloists from the Textile and Leather Manufacturing Center.</span>
+            </div>
+            <div class="cat-reflect">
+              <span class="label" data-es>Reflexión crítica</span>
+              <span class="label" data-en>Critical reflection</span>
+              <span data-es>La música y el canto son ejemplos de eventos asíncronos coordinados: el control de flujos en JavaScript requiere un orden secuencial preciso, como leer una partitura donde el silencio y la nota tienen valor lógico.</span>
+              <span data-en>Music and singing are examples of coordinated asynchronous events: flow control in JavaScript requires a precise sequential order, like reading a score where silence and note both carry logical value.</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA DEL EVENTO ===================== -->
+  <section id="galeria">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 04</span>
+          <h2><span data-es>Galería del evento</span><span data-en>Event gallery</span></h2>
+        </div>
+        <p>
+          <span data-es>Registro fotográfico de las presentaciones musicales y la exhibición de artes plásticas.</span>
+          <span data-en>Photographic record of the musical performances and visual-arts exhibition.</span>
+        </p>
+      </div>
+
+      <div class="gallery-filters" role="group" aria-label="Filtrar galería por categoría">
+        <button type="button" class="is-active" data-filter="all"><span data-es>Todo</span><span data-en>All</span></button>
+        <button type="button" data-filter="musica"><span data-es>Música y canto</span><span data-en>Music &amp; singing</span></button>
+        <button type="button" data-filter="pintura"><span data-es>Pintura y dibujo</span><span data-en>Painting &amp; drawing</span></button>
+        <button type="button" data-filter="baile"><span data-es>Danza</span><span data-en>Dance</span></button>
+        <button type="button" data-filter="literatura"><span data-es>Literatura</span><span data-en>Literature</span></button>
+        <button type="button" data-filter="fotografia"><span data-es>Fotografía</span><span data-en>Photography</span></button>
+        <button type="button" data-filter="publico"><span data-es>Auditorio</span><span data-en>Audience</span></button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item tall" data-cat="musica"
+             data-cap-es="Saxofonista interpretando frente a la bandera de Colombia"
+             data-cap-en="Saxophonist performing in front of the Colombian flag">
+          <img src="img/event/01-musica-sax-presentacion.jpeg" alt="Saxofonista interpretando frente a la bandera de Colombia" loading="lazy" />
+          <div class="gi-cap">música · saxofón</div>
+        </div>
+
+        <div class="gallery-item" data-cat="musica"
+             data-cap-es="Afinación de guitarra clásica antes de la presentación"
+             data-cap-en="Tuning a classical guitar before the performance">
+          <img src="img/event/02-musica-guitarra-afinacion.jpeg" alt="Afinación de guitarra clásica antes de la presentación" loading="lazy" />
+          <div class="gi-cap">música · guitarra</div>
+        </div>
+
+        <div class="gallery-item" data-cat="musica"
+             data-cap-es="Guitarrista en escena ante el público"
+             data-cap-en="Guitarist on stage before the audience">
+          <img src="img/event/03-musica-guitarra-publico.jpeg" alt="Guitarrista en escena ante el público" loading="lazy" />
+          <div class="gi-cap">música · guitarra</div>
+        </div>
+
+        <div class="gallery-item" data-cat="musica"
+             data-cap-es="Saxofonista de pie junto al atril"
+             data-cap-en="Saxophonist standing next to the music stand">
+          <img src="img/event/04-musica-saxofonista.jpeg" alt="Saxofonista de pie junto al atril" loading="lazy" />
+          <div class="gi-cap">música · saxofón</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="musica"
+             data-cap-es="Trío vocal e instrumental durante su interpretación"
+             data-cap-en="Vocal and instrumental trio during their performance">
+          <img src="img/event/05-canto-trio.jpeg" alt="Trío vocal e instrumental durante su interpretación" loading="lazy" />
+          <div class="gi-cap">canto · trío</div>
+        </div>
+
+        <div class="gallery-item tall" data-cat="musica"
+             data-cap-es="Solista interpretando una pieza vocal"
+             data-cap-en="Soloist performing a vocal piece">
+          <img src="img/event/06-canto-solista.jpeg" alt="Solista interpretando una pieza vocal" loading="lazy" />
+          <div class="gi-cap">canto · solista</div>
+        </div>
+
+        <div class="gallery-item" data-cat="musica"
+             data-cap-es="Trío musical visto desde el público asistente"
+             data-cap-en="Musical trio seen from the audience">
+          <img src="img/event/07-canto-trio-publico.jpeg" alt="Trío musical visto desde el público asistente" loading="lazy" />
+          <div class="gi-cap">canto · trío</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Obra pictórica titulada Bogotá 2050"
+             data-cap-en="Painting titled Bogotá 2050">
+          <img src="img/event/08-pintura-bogota2050.jpeg" alt="Obra pictórica titulada Bogotá 2050" loading="lazy" />
+          <div class="gi-cap">pintura · exhibición</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="pintura"
+             data-cap-es="Grupo de expositores presentando sus obras de artes plásticas"
+             data-cap-en="Group of exhibitors presenting their visual-arts pieces">
+          <img src="img/event/09-pintura-galeria-grupo.jpeg" alt="Grupo de expositores presentando sus obras de artes plásticas" loading="lazy" />
+          <div class="gi-cap">pintura · grupo</div>
+        </div>
+
+        <div class="gallery-item tall" data-cat="pintura"
+             data-cap-es="Obra con motivo de corazón sobre fondo rosa"
+             data-cap-en="Painting featuring a heart motif on a pink background">
+          <img src="img/event/10-pintura-corazon-rosa.jpeg" alt="Obra con motivo de corazón sobre fondo rosa" loading="lazy" />
+          <div class="gi-cap">pintura · simbólico</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Obra pictórica con figura alada"
+             data-cap-en="Painting featuring a winged figure">
+          <img src="img/event/11-pintura-angel.jpeg" alt="Obra pictórica con figura alada" loading="lazy" />
+          <div class="gi-cap">pintura · figurativo</div>
+        </div>
+
+        <div class="gallery-item tall" data-cat="pintura"
+             data-cap-es="Obra con temática espacial y astronauta"
+             data-cap-en="Painting with a space and astronaut theme">
+          <img src="img/event/12-pintura-astronauta-galaxia.jpeg" alt="Obra con temática espacial y astronauta" loading="lazy" />
+          <div class="gi-cap">pintura · espacial</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Expositora presentando su obra Bogotá ante el jurado"
+             data-cap-en="Exhibitor presenting her Bogotá piece to the jury">
+          <img src="img/event/14-pintura-presentacion-bogota.jpeg" alt="Expositora presentando su obra Bogotá ante el jurado" loading="lazy" />
+          <div class="gi-cap">pintura · presentación</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Expositora junto a su obra durante la muestra"
+             data-cap-en="Exhibitor next to her piece during the showcase">
+          <img src="img/event/15-pintura-vestido-cafe.jpeg" alt="Expositora junto a su obra durante la muestra" loading="lazy" />
+          <div class="gi-cap">pintura · presentación</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Panel de exhibición con obras sobre fondo azul"
+             data-cap-en="Exhibition panel with pieces on a blue backdrop">
+          <img src="img/event/16-pintura-galeria-azul.jpeg" alt="Panel de exhibición con obras sobre fondo azul" loading="lazy" />
+          <div class="gi-cap">pintura · panel</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="pintura"
+             data-cap-es="Grupo de expositores mostrando sus obras finales al público"
+             data-cap-en="Group of exhibitors showing their final pieces to the audience">
+          <img src="img/event/17-pintura-grupo-final.jpeg" alt="Grupo de expositores mostrando sus obras finales al público" loading="lazy" />
+          <div class="gi-cap">pintura · grupo</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Expositores de pie junto a sus obras en el escenario"
+             data-cap-en="Exhibitors standing next to their pieces on stage">
+          <img src="img/event/18-pintura-grupo-podio.jpeg" alt="Expositores de pie junto a sus obras en el escenario" loading="lazy" />
+          <div class="gi-cap">pintura · grupo</div>
+        </div>
+
+        <div class="gallery-item" data-cat="pintura"
+             data-cap-es="Presentación de la obra Bogotá ante los asistentes"
+             data-cap-en="Presentation of the Bogotá piece to attendees">
+          <img src="img/event/19-pintura-bogota-publico.jpeg" alt="Presentación de la obra Bogotá ante los asistentes" loading="lazy" />
+          <div class="gi-cap">pintura · presentación</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="publico"
+             data-cap-es="Vista general del auditorio durante el cierre del evento"
+             data-cap-en="General view of the auditorium during the event's closing">
+          <img src="img/event/20-publico-auditorio-cierre.jpeg" alt="Vista general del auditorio durante el cierre del evento" loading="lazy" />
+          <div class="gi-cap">auditorio · cierre</div>
+        </div>
+
+        <div class="gallery-item" data-cat="literatura"
+             data-cap-es="Aprendiz declamando desde el podio frente a la bandera de Colombia"
+             data-cap-en="Trainee reciting from the podium in front of the Colombian flag">
+          <img src="img/event/21-literatura-orador-podio.jpeg" alt="Aprendiz declamando desde el podio frente a la bandera de Colombia" loading="lazy" />
+          <div class="gi-cap">literatura · declamación</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="baile"
+             data-cap-es="Grupo de baile en el escenario principal durante la gala"
+             data-cap-en="Dance group on the main stage during the gala">
+          <img src="img/event/22-baile-grupo-escenario.jpeg" alt="Grupo de baile en el escenario principal durante la gala" loading="lazy" />
+          <div class="gi-cap">danza · grupo</div>
+        </div>
+
+        <div class="gallery-item" data-cat="baile"
+             data-cap-es="Presentación de danza vista desde el público asistente"
+             data-cap-en="Dance performance seen from the attending audience">
+          <img src="img/event/23-baile-grupo-publico.jpeg" alt="Presentación de danza vista desde el público asistente" loading="lazy" />
+          <div class="gi-cap">danza · presentación</div>
+        </div>
+
+        <div class="gallery-item" data-cat="baile"
+             data-cap-es="Público grabando la coreografía con sus teléfonos"
+             data-cap-en="Audience filming the choreography with their phones">
+          <img src="img/event/24-baile-publico-grabando.jpeg" alt="Público grabando la coreografía con sus teléfonos" loading="lazy" />
+          <div class="gi-cap">danza · registro</div>
+        </div>
+
+        <div class="gallery-item tall" data-cat="fotografia"
+             data-cap-es="Vista panorámica del salón principal durante la gala"
+             data-cap-en="Panoramic view of the main hall during the gala">
+          <img src="img/event/25-fotografia-panoramica-salon.jpeg" alt="Vista panorámica del salón principal durante la gala" loading="lazy" />
+          <div class="gi-cap">fotografía · panorámica</div>
+        </div>
+
+        <div class="gallery-item" data-cat="fotografia"
+             data-cap-es="Ambiente de entrada del evento, decorado con globos"
+             data-cap-en="Event entrance atmosphere, decorated with balloons">
+          <img src="img/event/26-fotografia-ambiente-entrada.jpeg" alt="Ambiente de entrada del evento, decorado con globos" loading="lazy" />
+          <div class="gi-cap">fotografía · ambiente</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="baile"
+             data-cap-es="Bailarines con vestuario blanco y rosa sobre el escenario"
+             data-cap-en="Dancers in white and pink costumes on stage">
+          <img src="img/event/27-baile-grupo-blanco-rosa.jpeg" alt="Bailarines con vestuario blanco y rosa sobre el escenario" loading="lazy" />
+          <div class="gi-cap">danza · vestuario</div>
+        </div>
+
+        <div class="gallery-item" data-cat="literatura"
+             data-cap-es="Público atento durante una intervención en el escenario"
+             data-cap-en="Audience attentively watching a stage performance">
+          <img src="img/event/28-literatura-publico-atento.jpeg" alt="Público atento durante una intervención en el escenario" loading="lazy" />
+          <div class="gi-cap">literatura · público</div>
+        </div>
+
+        <div class="gallery-item" data-cat="baile"
+             data-cap-es="Animador junto al grupo de baile saludando al público"
+             data-cap-en="Host alongside the dance group greeting the audience">
+          <img src="img/event/29-baile-animador-grupo.jpeg" alt="Animador junto al grupo de baile saludando al público" loading="lazy" />
+          <div class="gi-cap">danza · cierre</div>
+        </div>
+
+        <div class="gallery-item" data-cat="fotografia"
+             data-cap-es="Asistentes observando el escenario desde sus asientos"
+             data-cap-en="Attendees watching the stage from their seats">
+          <img src="img/event/30-fotografia-publico-sentado.jpeg" alt="Asistentes observando el escenario desde sus asientos" loading="lazy" />
+          <div class="gi-cap">fotografía · documental</div>
+        </div>
+
+        <div class="gallery-item" data-cat="fotografia"
+             data-cap-es="Vista lateral del público durante la gala"
+             data-cap-en="Side view of the audience during the gala">
+          <img src="img/event/31-fotografia-publico-lateral.jpeg" alt="Vista lateral del público durante la gala" loading="lazy" />
+          <div class="gi-cap">fotografía · documental</div>
+        </div>
+
+        <div class="gallery-item" data-cat="fotografia"
+             data-cap-es="Captura de un momento dinámico entre el público"
+             data-cap-en="Capture of a dynamic moment among the audience">
+          <img src="img/event/32-fotografia-momento-dinamico.jpeg" alt="Captura de un momento dinámico entre el público" loading="lazy" />
+          <div class="gi-cap">fotografía · momento</div>
+        </div>
+
+        <div class="gallery-item wide" data-cat="baile"
+             data-cap-es="Público celebrando de pie al cierre de la presentación"
+             data-cap-en="Audience celebrating on their feet at the close of the performance">
+          <img src="img/event/34-baile-publico-celebracion.jpeg" alt="Público celebrando de pie al cierre de la presentación" loading="lazy" />
+          <div class="gi-cap">danza · celebración</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== REFLEXION FINAL ===================== -->
+  <section id="reflexion">
+    <div class="wrap reflect-layout">
+      <div>
+        <span class="section-num">// 05</span>
+        <p class="reflect-quote" data-es>"Un sistema de información exitoso no es solo aquel que ejecuta líneas de código de forma rápida, sino aquel que logra conectar con la sensibilidad humana."</p>
+        <p class="reflect-quote" data-en>"A successful information system is not just one that executes lines of code quickly, but one that manages to connect with human sensibility."</p>
+      </div>
+
+      <div class="reflect-body">
+        <h2 style="font-family:var(--font-display);font-size:var(--step-2);font-weight:600;margin-bottom:1.2rem;">
+          <span data-es>Arte, creatividad y formación integral</span>
+          <span data-en>Art, creativity, and comprehensive training</span>
+        </h2>
+
+        <p data-es>El desarrollo técnico de soluciones de software no puede desligarse del factor humano. Los entornos empresariales modernos exigen que un desarrollador ADSO posea una alta capacidad de resiliencia, pensamiento crítico y, fundamentalmente, creatividad.</p>
+        <p data-en>The technical development of software solutions cannot be separated from the human factor. Modern business environments demand that an ADSO developer have strong resilience, critical thinking, and, fundamentally, creativity.</p>
+
+        <p data-es>Espacios como la Batalla de Talentos 2026 demuestran que el arte es un catalizador del pensamiento lateral; un programador creativo no se limita a replicar soluciones existentes, sino que imagina nuevas arquitecturas lógicas para resolver problemas cotidianos.</p>
+        <p data-en>Spaces like the 2026 Talent Battle show that art is a catalyst for lateral thinking; a creative programmer doesn't simply replicate existing solutions but imagines new logical architectures to solve everyday problems.</p>
+
+        <p data-es>Asimismo, la cultura y la expresión artística fortalecen las habilidades blandas, tales como la comunicación asertiva, la empatía y el trabajo en equipo. La integración de la tecnología y el arte constituye la verdadera base de la innovación en la era digital.</p>
+        <p data-en>Likewise, culture and artistic expression strengthen soft skills such as assertive communication, empathy, and teamwork. The integration of technology and art is the true foundation of innovation in the digital age.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GLOSARIO ===================== -->
+  <section id="glosario">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 06</span>
+          <h2><span data-es>Glosario técnico y cultural</span><span data-en>Technical &amp; cultural glossary</span></h2>
+        </div>
+        <p>
+          <span data-es>Conceptos del desarrollo FrontEnd unificados con las expresiones culturales de la gala.</span>
+          <span data-en>FrontEnd development concepts unified with the cultural expressions of the gala.</span>
+        </p>
+      </div>
+
+      <div class="glossary-search">
+        <span aria-hidden="true">🔎</span>
+        <input type="text" id="glossarySearch" placeholder="Buscar término…" data-placeholder-es="Buscar término…" data-placeholder-en="Search term…" />
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="glossary-table">
+          <thead>
+            <tr>
+              <th data-es>Inglés</th><th data-en>English</th>
+              <th data-es>Español</th><th data-en>Spanish</th>
+              <th data-es>Definición</th><th data-en>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="gl-term">Navbar</td><td class="gl-es">Barra de navegación</td><td class="gl-def"><span data-es>Componente de Bootstrap utilizado para estructurar los enlaces principales de un sitio web de forma responsive.</span><span data-en>Bootstrap component used to structure a website's main links in a responsive way.</span></td></tr>
+            <tr><td class="gl-term">Grid System</td><td class="gl-es">Sistema de rejilla</td><td class="gl-def"><span data-es>Estructura basada en filas y columnas que permite distribuir el contenido de la interfaz de manera adaptable.</span><span data-en>Structure based on rows and columns that distributes interface content in an adaptable way.</span></td></tr>
+            <tr><td class="gl-term">User Experience (UX)</td><td class="gl-es">Experiencia de usuario</td><td class="gl-def"><span data-es>Proceso de diseño que busca que la interacción con el software sea intuitiva, accesible y agradable.</span><span data-en>Design process that aims to make interaction with software intuitive, accessible, and pleasant.</span></td></tr>
+            <tr><td class="gl-term">User Interface (UI)</td><td class="gl-es">Interfaz de usuario</td><td class="gl-def"><span data-es>Conjunto de elementos visuales y gráficos con los que el usuario interactúa directamente en la pantalla.</span><span data-en>Set of visual and graphic elements the user interacts with directly on screen.</span></td></tr>
+            <tr><td class="gl-term">Responsive Design</td><td class="gl-es">Diseño adaptable</td><td class="gl-def"><span data-es>Técnica de desarrollo que permite que una página web modifique su diseño según el tamaño del dispositivo.</span><span data-en>Development technique that lets a webpage adjust its layout according to device size.</span></td></tr>
+            <tr><td class="gl-term">Bootstrap</td><td class="gl-es">Bootstrap</td><td class="gl-def"><span data-es>Framework de CSS utilizado para acelerar el desarrollo FrontEnd mediante componentes preestilizados.</span><span data-en>CSS framework used to speed up FrontEnd development through pre-styled components.</span></td></tr>
+            <tr><td class="gl-term">Performance</td><td class="gl-es">Presentación artística</td><td class="gl-def"><span data-es>Ejecución pública de una manifestación cultural ante una audiencia en un espacio determinado.</span><span data-en>Public execution of a cultural expression before an audience in a given space.</span></td></tr>
+            <tr><td class="gl-term">Creativity</td><td class="gl-es">Creatividad</td><td class="gl-def"><span data-es>Habilidad cognitiva para generar ideas originales, resolver problemas complejos y diseñar soluciones innovadoras.</span><span data-en>Cognitive ability to generate original ideas, solve complex problems, and design innovative solutions.</span></td></tr>
+            <tr><td class="gl-term">Framework</td><td class="gl-es">Marco de trabajo</td><td class="gl-def"><span data-es>Estructura de software estandarizada que provee herramientas para facilitar la escritura de código eficiente.</span><span data-en>Standardized software structure that provides tools to facilitate writing efficient code.</span></td></tr>
+            <tr><td class="gl-term">Layout</td><td class="gl-es">Disposición / Esquema</td><td class="gl-def"><span data-es>Distribución e inicio visual de los elementos gráficos y textuales dentro de una página web.</span><span data-en>Visual distribution and arrangement of graphic and text elements within a webpage.</span></td></tr>
+            <tr><td class="gl-term">Accessibility</td><td class="gl-es">Accesibilidad</td><td class="gl-def"><span data-es>Diseño de productos digitales utilizables por cualquier persona, incluyendo aquellas con discapacidades operativas.</span><span data-en>Design of digital products usable by anyone, including people with operational disabilities.</span></td></tr>
+            <tr><td class="gl-term">Semantic Tags</td><td class="gl-es">Etiquetas semánticas</td><td class="gl-def"><span data-es>Elementos de HTML5 que describen de forma explícita el significado y propósito de un bloque de contenido.</span><span data-en>HTML5 elements that explicitly describe the meaning and purpose of a content block.</span></td></tr>
+            <tr><td class="gl-term">Cognitive Load</td><td class="gl-es">Carga cognitiva</td><td class="gl-def"><span data-es>Cantidad de esfuerzo mental que requiere un usuario para comprender y navegar a través de un sistema de software.</span><span data-en>Amount of mental effort a user needs to understand and navigate a software system.</span></td></tr>
+            <tr><td class="gl-term">GitHub Pages</td><td class="gl-es">GitHub Pages</td><td class="gl-def"><span data-es>Servicio de alojamiento en la nube que permite publicar sitios web estáticos directamente desde un repositorio.</span><span data-en>Cloud hosting service that publishes static websites directly from a repository.</span></td></tr>
+            <tr><td class="gl-term">Artwork</td><td class="gl-es">Obra de arte</td><td class="gl-def"><span data-es>Expresión u objeto físico/digital que posee un valor estético, cultural o comunicativo único.</span><span data-en>Physical or digital expression or object with unique aesthetic, cultural, or communicative value.</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="gl-count" id="glossaryCount" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ===================== FICHA TECNICA ===================== -->
+  <section id="ficha">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="section-num">// 07</span>
+          <h2><span data-es>Ficha técnica del proyecto</span><span data-en>Project technical sheet</span></h2>
+        </div>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-cell">
+          <span class="t-label" data-es>Programa de formación</span>
+          <span class="t-label" data-en>Training program</span>
+          <p class="t-value" data-es>Análisis y Desarrollo de Software (ADSO)</p>
+          <p class="t-value" data-en>Software Analysis and Development (ADSO)</p>
+        </div>
+        <div class="tech-cell">
+          <span class="t-label" data-es>Contexto institucional</span>
+          <span class="t-label" data-en>Institutional context</span>
+          <p class="t-value" data-es>Centro de Manufactura en Textil y Cuero – SENA</p>
+          <p class="t-value" data-en>Textile and Leather Manufacturing Center – SENA</p>
+        </div>
+        <div class="tech-cell">
+          <span class="t-label" data-es>Proyecto</span>
+          <span class="t-label" data-en>Project</span>
+          <p class="t-value" data-es>Construcción de sitio web informativo FrontEnd</p>
+          <p class="t-value" data-en>FrontEnd informational website build</p>
+        </div>
+        <div class="tech-cell">
+          <span class="t-label" data-es>Estructura de archivos</span>
+          <span class="t-label" data-en>File structure</span>
+          <p class="t-value" data-es>css/ · js/ · img/ · index.html (componentes separados)</p>
+          <p class="t-value" data-en>css/ · js/ · img/ · index.html (separated components)</p>
+        </div>
+        <div class="tech-cell">
+          <span class="t-label" data-es>Tecnologías</span>
+          <span class="t-label" data-en>Technologies</span>
+          <p class="t-value">HTML5 · CSS3 · JavaScript</p>
+        </div>
+        <div class="tech-cell">
+          <span class="t-label" data-es>Bilingüismo</span>
+          <span class="t-label" data-en>Bilingual support</span>
+          <p class="t-value" data-es>Selector funcional ES / EN sobre el 100% del contenido</p>
+          <p class="t-value" data-en>Functional ES / EN switch across 100% of the content</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap footer-grid">
+    <span class="f-brand">batalla-talentos-2026 / index.html</span>
+    <span>
+      <span data-es>Centro de Manufactura en Textil y Cuero — SENA · Programa ADSO</span>
+      <span data-en>Textile and Leather Manufacturing Center — SENA · ADSO Program</span>
+    </span>
+  </div>
+</footer>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" aria-hidden="true">
+  <button type="button" class="lightbox-close" aria-label="Cerrar">✕</button>
+  <button type="button" class="lightbox-nav lightbox-prev" aria-label="Anterior">‹</button>
+  <button type="button" class="lightbox-nav lightbox-next" aria-label="Siguiente">›</button>
+  <div class="lightbox-inner">
+    <img src="" alt="" />
+    <p class="lightbox-cap"><span data-es></span><span data-en></span></p>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

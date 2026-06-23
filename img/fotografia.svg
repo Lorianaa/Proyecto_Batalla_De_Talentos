@@ -1,0 +1,12 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="fotoTitle">
+  <title id="fotoTitle">Ilustracion de fotografia</title>
+  <rect width="400" height="300" fill="#1d1916"/>
+  <g transform="translate(110,90)">
+    <rect x="0" y="14" width="180" height="120" rx="8" fill="none" stroke="#C84B31" stroke-width="3"/>
+    <rect x="60" y="0" width="60" height="20" rx="4" fill="none" stroke="#C84B31" stroke-width="3"/>
+    <circle cx="90" cy="74" r="34" fill="none" stroke="#F2EDE4" stroke-width="3"/>
+    <circle cx="90" cy="74" r="14" fill="none" stroke="#F2EDE4" stroke-width="2.5"/>
+    <circle cx="150" cy="40" r="5" fill="#3E7C6F"/>
+  </g>
+  <text x="24" y="278" font-family="IBM Plex Mono, monospace" font-size="11" fill="#5a4e42">// frame.capture — layout: grid(12)</text>
+</svg>
